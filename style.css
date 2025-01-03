@@ -1,0 +1,210 @@
+body{
+	background-color: rgb(234, 230, 189);
+	padding: 1% 2% 0 2%;
+	position: relative;
+}
+
+.navigation{
+	display: flex;
+
+	a{
+		text-decoration: none;
+	}
+
+	.navCell{
+		display: flex;
+		margin: 10px;
+		background-color: rgb(55, 153, 54);
+		border-radius: 1rem;
+		padding: 0 10px;
+		justify-content: center;
+		align-items: center;
+
+		p{
+			text-decoration: none;
+			color: black;
+			margin: 10px 7px;
+		}
+
+		img{
+			/* scale: 0.5; */
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+
+	.navCell:hover{
+		background-color: rgb(157, 204, 26);
+		transform: scale(1.1);
+		transition: .25s;
+	}
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+
+
+	.titleAndCircle{
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+	}
+
+
+	p{
+		border: 1px solid black;
+		padding: 20px;
+		border-radius: 1rem;	
+		margin: 0;
+	}
+}
+
+.limeGreenCircle1{
+	background-color: rgb(157, 204, 26);
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	position: absolute;
+	left: -1rem;
+	top: 50%;
+	transform: translate(-50%, 0);
+}
+
+.limeGreenCircle2{
+	background-color: rgb(157, 204, 26);
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(150%, 0);
+}
+
+.greenCircle1{
+	background-color: rgb(55, 153, 54);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: -1rem;
+	transform: translate(0, -50%);
+}
+
+.imagineBroasca{
+	position: absolute;
+	top: 10px;
+	right: 2%;
+	scale: 1.5;
+	transform: translate(-20%, 20%);
+}
+
+.gridTable{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 200px;
+
+	.gridContainer{
+		display: grid;
+  		grid-template-columns: repeat(4, 1fr);
+	  	gap: 20px;
+	}
+
+	.gridItem {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.broascaImg {
+		width: 7rem;
+		height: auto;
+	}
+
+	.inputBox {
+		margin-top: 10px;
+		padding: 10px;
+		border: none;
+		width: 200px;
+		border-radius: .5rem;
+		background-color: rgb(217, 217, 217);
+		color: rgb(139, 139, 139);
+	}
+
+	#inputBoxBig{
+		height: 75px;
+	}
+}
+
+.submitButtonDiv{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+
+	.submitButton{
+		background-color: rgb(55, 153, 54);
+		color: white;
+		border: none;
+		padding: 20px 40px;
+		border-radius: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.submitButton:hover{
+		background-color: rgb(157, 204, 26);
+		transform: scale(1.1);
+		transition: .25s;
+	}
+}
+
+.hR{
+	border: 1px solid black;
+	/* width: 100%; */
+	margin: 50px 0;
+}
+
+.images{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.smallImage{
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+		/* height: 50vh; */
+		width: 25vw;
+
+	}
+
+	.biggerImage{
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+		/* height: 60vh; */
+		width: 25vw;
+	}
+}
+
+.list{
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1459px) {
+    .limeGreenCircle2 {
+		transform: translate(0, 40%);
+		width: 8rem;
+		height: 8rem;
+    }
+
+	.gridTable{
+		.gridContainer{
+			display: grid;
+			  grid-template-columns: repeat(3, 1fr);
+			  gap: 20px;
+		}
+	}
+  }
+
